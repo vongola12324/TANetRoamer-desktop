@@ -18,9 +18,9 @@ env:
 
 after_success:
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run buildLinux; fi
-- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export FILE_TO_UPLOAD=$(ls dist/tanetroamer-desktop-*-x86_64.tar.xz); fi
+- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export FILE_TO_UPLOAD="dist/${ls dist/*.tar.xz}"; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run buildOSX; fi
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export FILE_TO_UPLOAD=$(ls dist/tanetroamer-desktop-*-x86_64.dmg); fi
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export FILE_TO_UPLOAD="dist/${ls dist/*.dmg}"; fi
 - ls -alh dist
 
 addons:
