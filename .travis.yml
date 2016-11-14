@@ -37,6 +37,9 @@ install:
 - npm install
 - build --version
 
+after_failure:
+- cat npm-debug.log
+
 #deploy:
 #  provider: releases
 #  api_key:
