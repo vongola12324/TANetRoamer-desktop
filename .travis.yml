@@ -24,6 +24,7 @@ before_deploy:
 - export FILE_TO_UPLOAD_TAR_GZ=$(ls dist/tanetroamer-desktop-*-x86_64.tar.gz)
 - export FILE_TO_UPLOAD_TAR_BZ2=$(ls dist/tanetroamer-desktop-*-x86_64.tar.bz2)
 - export FILE_TO_UPLOAD_APPIMAGE=$(ls dist/tanetroamer-desktop-*-x86_64.AppImage)
+- ls -alh
 
 addons:
   apt:
