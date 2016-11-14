@@ -29,6 +29,7 @@ addons:
     - xvfb
 
 before_install:
+- chmod 777 before_install.sh
 - ./before_install.sh
 
 
