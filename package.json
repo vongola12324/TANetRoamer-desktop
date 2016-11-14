@@ -4,7 +4,7 @@
         "dist": "build -l tar.xz tar.gz tar.bz2 AppImage",
         "release": "build -l tar.xz tar.gz tar.bz2 AppImage && node release",
         "test": "echo \"no test specified\"",
-        "buildLinux" : "build -l tar.xz tar.gz tar.bz2 AppImage",
+        "buildLinux" : "build -l tar.xz",
         "buildOSX" : "build -m dmg"
     },
     "devDependencies": {
